@@ -2248,21 +2248,18 @@ define Device/tplink_tl-xtr8488
 endef
 TARGET_DEVICES += tplink_tl-xtr8488
 
-define Device/QLB-4Pro\
-  DEVICE_VENDOR := QLB\
-  DEVICE_MODEL := 4Pro\
-  DEVICE_DTS := mt7981b-QLB-4Pro\
-  DEVICE_DTS_DIR := ../dts\
-  SUPPORTED_DEVICES += mediatek,mt7981-spim-snand-rfb
-  UBINIZE_OPTS := -E 5\
-  BLOCKSIZE := 128k\
-  PAGESIZE := 2048\
-  IMAGE_SIZE := 507904k\
-  KERNEL_IN_UBI := 1\
-  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata\
-  DEVICE_PACKAGES := kmod-usb3 kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware automount\
-endef\
-TARGET_DEVICES += QLB-4Pro\
+define Device/QLB-4Pro
+  DEVICE_VENDOR := QLB
+  DEVICE_MODEL := 4Pro
+  DEVICE_DTS := mt7981b-QLB-4Pro
+  DEVICE_DTS_DIR := ../dts
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  KERNEL_IN_UBI := 1
+  UBINIZE_OPTS := -E 5
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += cmcc_xr30-nand
 
 define Device/tplink_wma301
   DEVICE_VENDOR := TP-Link
