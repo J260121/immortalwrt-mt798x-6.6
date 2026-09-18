@@ -4,8 +4,8 @@
 #include "mt7981b-cmcc-xr30.dtsi"
 
 / {
-	model = "CMCC XR30 NAND (U-Boot mod)";
-	compatible = "cmcc,xr30-nand", "mediatek,mt7981";
+	model = "QLB-4pro";
+	compatible = "QLB,4pro", "mediatek,mt7981";
 
 	aliases {
 		label-mac-device = &gmac1;
