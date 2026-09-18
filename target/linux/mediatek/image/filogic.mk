@@ -2259,7 +2259,7 @@ define Device/QLB-4Pro
   UBINIZE_OPTS := -E 5
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
-TARGET_DEVICES += cmcc_xr30-nand
+TARGET_DEVICES += QLB-4Pro
 
 define Device/tplink_wma301
   DEVICE_VENDOR := TP-Link
