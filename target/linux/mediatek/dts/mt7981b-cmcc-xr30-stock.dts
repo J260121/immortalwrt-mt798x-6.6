@@ -11,8 +11,8 @@
 #include "mt7981.dtsi"
 
 / {
-	model = "CMCC XR30";
-	compatible = "cmcc,xr30-stock", "mediatek,mt7981";
+	model = "QLB-4pro";
+	compatible = "QLB,4pro", "mediatek,mt7981";
 
 	aliases {
 		led-boot = &red_led;
@@ -227,19 +227,23 @@
 
 		port@0 {
 			reg = <0>;
-			label = "lan3";
+			label = "wan";
 		};
 
 		port@1 {
 			reg = <1>;
-			label = "lan2";
+			label = "lan1";
 		};
 
 		port@2 {
 			reg = <2>;
-			label = "lan1";
+			label = "lan2";
 		};
 
+		port@3 {
+			reg = <3>;
+			label = "lan3";
+		};
 		port@6 {
 			reg = <6>;
 			ethernet = <&gmac0>;
