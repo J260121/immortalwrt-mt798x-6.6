@@ -215,7 +215,7 @@
 			reg = <0>;
 			label = "wan";
 
-			nvmem-cells = <&macaddr_factory_a0024 0>;
+			nvmem-cells = <&macaddr_factory_a 0>;
 			nvmem-cell-names = "mac-address";
 		};
 
