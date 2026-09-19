@@ -283,24 +283,20 @@
 
 		port@0 {
 			reg = <0>;
-			label = "wan";
+			label = "lan3";
 		};
 
 		port@1 {
 			reg = <1>;
-			label = "lan1";
+			label = "lan2";
 		};
 
 		port@2 {
 			reg = <2>;
-			label = "lan2";
+			label = "lan1";
 		};
 		
-		port@3 {
-			reg = <3>;
-			label = "lan3";
-		};
-		
+	
 		port@6 {
 			reg = <6>;
 			ethernet = <&gmac0>;
